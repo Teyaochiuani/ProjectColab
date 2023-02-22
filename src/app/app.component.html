@@ -1,0 +1,54 @@
+
+<div class="name">
+  <h1>Marcos Jaasiel Hernandez Jimenez</h1>
+  <h1>Luis Miguel Cruz Linares</h1>
+</div>
+
+<hr>
+
+<div class="wrapper">
+  <div class="gallery1">
+      <div class="card1">
+        <img src="https://cryptoshitcompra.com/wp-content/uploads/2022/04/Elon-Musk-dice-que-el-equipo-SpaceX-Falcon-esta-haciendo.jpg" class="card-img-top" alt="SpaceX">
+        <div class="card-body">
+          <h5 class="card-title">{{Company.name}}.</h5>
+          <p class="card-text">{{ Company.summary}}.</p>
+          <p class="list-group-item">Ceo: {{ Company.ceo }}. </p>
+          <p class="list-group-item">Volaracion:{{ Company.valuation}}.  </p>
+          <p class="list-group-item">Fundador: {{Company.founder}}. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<hr>
+
+<div class="wrapper">
+  <div class="gallery">
+    <div class="card" style="width: 18rem;" *ngFor="let item of capsule">
+      <div class="tools">
+        <div class="circle">
+          <span class="red box"></span>
+        </div>
+        <div class="circle">
+          <span class="yellow box"></span>
+        </div>
+        <div class="circle">
+          <span class="green box"></span>
+        </div>
+      </div>
+      <div class="card__content">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Tipo: {{item.type}}</h5>
+        <h6 class="card-text">ID:{{ item.id}}.</h6>
+        <p class="card-text">{{item.last_update}}.</p>
+        <a href="#" class="card-link">{{ item.status}}</a>
+        <a href="#" class="card-link">{{item.serial}}</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
