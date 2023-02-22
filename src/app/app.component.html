@@ -40,11 +40,16 @@
       <div class="card__content">
       </div>
       <div class="card-body">
+        <h5 class="card-title">Name: {{item.name}}</h5>
         <h5 class="card-title">Tipo: {{item.type}}</h5>
         <h6 class="card-text">ID:{{ item.id}}.</h6>
-        <p class="card-text">{{item.last_update}}.</p>
-        <a href="#" class="card-link">{{ item.status}}</a>
-        <a href="#" class="card-link">{{item.serial}}</a>
+        <p class="card-text">Roles: {{item.roles}}.</p>
+        <p class="card-text">Home_port: {{item.home_port}}.</p>
+        <p class="card-text">Year: {{item.year_built}}.</p>
+        <p class="card-text">Launches: {{item.launches}}.</p>
+        <a href="#" class="card-link">{{ item.image }}</a>
+        <a href="#" class="card-link">{{item.link}}</a>
+        
       </div>
     </div>
   </div>

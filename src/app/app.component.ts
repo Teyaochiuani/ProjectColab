@@ -19,7 +19,7 @@ export class AppComponent {
     ){};
 
     ngOnInit(){
-      this.http.get('https://api.spacexdata.com/v4/capsules').subscribe(( capsule:any )=>{
+      this.http.get('https://api.spacexdata.com/v4/ships').subscribe(( capsule:any )=>{
         this.capsule = capsule;
       })
 
